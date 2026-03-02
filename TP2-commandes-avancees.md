@@ -230,9 +230,11 @@ Le script semble avoir des problèmes et vous devez intervenir pour diagnostique
 
 **Question 24** - Le script a lancé des sous-processus `deployment_worker`. Tentez d'arrêter le processus principal `deployment` avec `kill` sans paramètres supplémentaires. Montrez l'échec avec `ps`.
 
-**Capture d'écran :**
-![Question 24](img/24.png)
+**Capture d'écran (version 1: kill seul) :**
+![Question 24](img/24-a.png)
 
+**Capture d'écran (version 2: kill avec PID) :**
+![Question 24](img/24-b.png)
 
 **Question 25** - Affichez la liste des signaux disponibles avec `kill -l`. Ensuite, utilisez la commande `kill -l SIGINT` pour trouver la valeur numérique du signal SIGINT.
 
@@ -248,7 +250,7 @@ Le script semble avoir des problèmes et vous devez intervenir pour diagnostique
 
 **Question 27** - Terminez le processus principal `deployment` en utilisant le signal `SIGINT` approprié (utilisez soit le nom SIGINT soit sa valeur numérique). Le script est programmé pour capturer ce signal et se terminer proprement avec un message d'arrêt.
 
-**Capture d'écran :**
+**Capture d'écran (le message d'arrêt n'existe pas):**
 ![Question 27](img/27.png)
 
 
@@ -267,7 +269,8 @@ Le script semble avoir des problèmes et vous devez intervenir pour diagnostique
 **Question 30** - Utilisez `ps` pour afficher le processus `monitoring` et montrer sa priorité actuelle.
 
 **Capture d'écran :**
-![Question 30](img/30.png)
+![Question 30](img/30-a.png)
+![Question 30](img/30-b.png)
 
 
 **Question 31** - Modifiez la priorité du processus `monitoring` en l'augmentant de 10 avec la commande `renice`.
